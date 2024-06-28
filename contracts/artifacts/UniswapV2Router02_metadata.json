@@ -1,0 +1,165 @@
+{
+	"compiler": {
+		"version": "0.6.8+commit.0bbfe453"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_factory",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenB",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountADesired",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountBDesired",
+						"type": "uint256"
+					}
+				],
+				"name": "addLiquidity",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountA",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountB",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "liquidity",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "factory",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountOutMin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address[]",
+						"name": "path",
+						"type": "address[]"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					}
+				],
+				"name": "swapExactTokensForTokens",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "amounts",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/4_UniswapV2Router02.sol": "UniswapV2Router02"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/4_UniswapV2Router02.sol": {
+			"keccak256": "0xac0de247b97689c48938c0a41fe414f0c65d989c28bc7954260412bc6d85e012",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8b08e8ac457efc98acbfb2a11a828004a9b534f610f195694b67984d841d960a",
+				"dweb:/ipfs/QmPnLPGRUwxdg6HZ9hPX97qLAiYAAd7oCRsvmLNtb39JDr"
+			]
+		},
+		"contracts/interfaces/IUniswapV2Factory.sol": {
+			"keccak256": "0xb72a78138df307a6839f86f9ad294eee1ded12dbbab3d794b852dabdfcb8f906",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0481dd557642b9f07ef6db85eab8e42c3467de627f65f7598a80c7e78a274933",
+				"dweb:/ipfs/QmNTeE59omZm6J4WyR9KSHNnyGiKAjNzQiRQCC9aHVtDhf"
+			]
+		},
+		"contracts/interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0x553a0ae2590035163d44ab292a79ae77090f33acd9fd27334f3e997277147bd6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3b1d05307c04172ef52e47e16e9872fa7eb56449c24f500ce3fe56c228057964",
+				"dweb:/ipfs/QmZavMdP4nfwhGGQXwRbkVGA1nfoe72oo2ocYUtMmpHc1E"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,290 @@
+{
+	"compiler": {
+		"version": "0.6.8+commit.0bbfe453"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"allowance(address,address)": {
+					"details": "Returns the remaining number of tokens that `spender` will be allowed to spend on behalf of `owner` through {transferFrom}. This is zero by default.      * This value changes when {approve} or {transferFrom} are called."
+				},
+				"approve(address,uint256)": {
+					"details": "Sets a `value` amount of tokens as the allowance of `spender` over the caller's tokens.      * Returns a boolean value indicating whether the operation succeeded.      * IMPORTANT: Beware that changing an allowance with this method brings the risk that someone may use both the old and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards: https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729      * Emits an {Approval} event."
+				},
+				"balanceOf(address)": {
+					"details": "Returns the value of tokens owned by `account`."
+				},
+				"totalSupply()": {
+					"details": "Returns the value of tokens in existence."
+				},
+				"transfer(address,uint256)": {
+					"details": "Moves a `value` amount of tokens from the caller's account to `to`.      * Returns a boolean value indicating whether the operation succeeded.      * Emits a {Transfer} event."
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "Moves a `value` amount of tokens from `from` to `to` using the allowance mechanism. `value` is then deducted from the caller's allowance.      * Returns a boolean value indicating whether the operation succeeded.      * Emits a {Transfer} event."
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/UniswapV2Pair.sol": "IERC20"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/UniswapV2ERC20.sol": {
+			"keccak256": "0xe47775fd621010c29d517d7b2fd5d8de0f62b8e1fa80174f1b10df407234c303",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8220c2d7abc40b13ba8535b8a42c959d0f0f5e318aa5467b77c34a05e6de6bdd",
+				"dweb:/ipfs/QmVfCSqu9TapfQdzQ9WoNrNWBxQQjwm58JLGDWhXFbb8ex"
+			]
+		},
+		"contracts/UniswapV2Pair.sol": {
+			"keccak256": "0x5cbfbb12cff147d6cd37cbbe203b8081e86895cc0aaf537a0971f153fc249ce3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c147acf4246048381eb08e3ec297e51e53beb8f346483c4c9e055298fc4613bd",
+				"dweb:/ipfs/QmX8GUUcjnxkHL5vBnSK7KLpfwMk1fd6XZVneHvyFFEPEv"
+			]
+		},
+		"contracts/interfaces/IUniswapV2ERC20.sol": {
+			"keccak256": "0xec7722039872a64da6f167c054b4637be7fba24539e548a781b965bf63c45574",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b213a0f5e378edd12c9601feafabd6ec6729a9ab4103d018c45381dff59da36f",
+				"dweb:/ipfs/Qmc5QvHhkDiih1dLnMH96F8Tw7QGKjYkQZ9AEuGEnqmcKy"
+			]
+		},
+		"contracts/interfaces/IUniswapV2Factory.sol": {
+			"keccak256": "0xb72a78138df307a6839f86f9ad294eee1ded12dbbab3d794b852dabdfcb8f906",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0481dd557642b9f07ef6db85eab8e42c3467de627f65f7598a80c7e78a274933",
+				"dweb:/ipfs/QmNTeE59omZm6J4WyR9KSHNnyGiKAjNzQiRQCC9aHVtDhf"
+			]
+		},
+		"contracts/interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0xd34627cd1bf5b8a6408bc93305ba3e53dfde5f40fa63d3928a0d4cf8cd4d097c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c9f327062d426728fd0a87adecd417d0c1c771dc7242319a867dcb3071ddf3bd",
+				"dweb:/ipfs/QmfB958vkxTNym2HmLR8Tq54qVQzyqfqYxiVzR3aVfWmXD"
+			]
+		},
+		"contracts/libraries/SafeMath.sol": {
+			"keccak256": "0xfe46a92953b0ebf82fc2a9f21f995beb60e845aaa7223bfb37711a3b41d6dc11",
+			"urls": [
+				"bzz-raw://06272423f21f7b375d85d3d4c0cb280a278b1f7f312af2bf002278e16bf48432",
+				"dweb:/ipfs/QmXGGm8wvt8pZu2ob1HFk8qLTRATasvomjkaYBvcH3qU57"
+			]
+		},
+		"contracts/libraries/UQ112x112.sol": {
+			"keccak256": "0xb6566da080d09c9b3c615ff9ab49d9fabbf60644565668ab3b86b6c458740d14",
+			"urls": [
+				"bzz-raw://08a05e98d28b5c0af88eb33f5a41922c2df9550218d892f6f557b7982234bef1",
+				"dweb:/ipfs/QmTBzYjTE4ZkiB9BVyNAhibWpHi69b4RJDq5uX2UF3xDoe"
+			]
+		}
+	},
+	"version": 1
+}

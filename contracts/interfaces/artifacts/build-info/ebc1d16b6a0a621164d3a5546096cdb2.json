@@ -1,0 +1,73 @@
+{
+	"id": "ebc1d16b6a0a621164d3a5546096cdb2",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.1",
+	"solcLongVersion": "0.8.1+commit.df193b15",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/interfaces/IUniswapV2Router.sol": {
+				"content": "// // SPDX-License-Identifier: MIT\r\n// pragma solidity ^0.8.0;\r\n\r\n// interface IUniswapV2Router {\r\n//     function factory() external pure returns (address);\r\n//     function WETH() external pure returns (address);\r\n\r\n//     function addLiquidity(\r\n//         address tokenA,\r\n//         address tokenB,\r\n//         uint amountADesired,\r\n//         uint amountBDesired,\r\n//         uint amountAMin,\r\n//         uint amountBMin,\r\n//         address to,\r\n//         uint deadline\r\n//     ) external returns (uint amountA, uint amountB, uint liquidity);\r\n\r\n//     function swapExactTokensForTokens(\r\n//         uint amountIn,\r\n//         uint amountOutMin,\r\n//         address[] calldata path,\r\n//         address to,\r\n//         uint deadline\r\n//     ) external returns (uint[] memory amounts);\r\n\r\n//     // Add other router functions here...\r\n// }\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": [],
+			"evmVersion": "petersburg"
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.1;\"\n--> contracts/interfaces/IUniswapV2Router.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.1;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/interfaces/IUniswapV2Router.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/interfaces/IUniswapV2Router.sol": {
+				"ast": {
+					"absolutePath": "contracts/interfaces/IUniswapV2Router.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "848:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
