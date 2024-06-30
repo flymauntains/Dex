@@ -448,7 +448,7 @@
 			"bytecodeHash": "ipfs"
 		},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
@@ -495,11 +495,11 @@
 			]
 		},
 		"contracts/MockTokenA.sol": {
-			"keccak256": "0x158d59f276d066ba15d3a88c0446df22f1e99e03c908c1608ba6a3b697e6140d",
+			"keccak256": "0xbee345c8a98949df143f5d45ff4a0e51270ba7447d10c813555bd12e61c7a55d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://038708c41b19d9e3502a3ee3b92890769b45676a862e6f1ada9709123a004434",
-				"dweb:/ipfs/QmQxHi92aEqunkB9njy2Y6WYi5Yk3TiyFe5A8VG175yGzP"
+				"bzz-raw://0508ec17c0a53a2d11391632d081883f351406917fd2e336459d729ba117f996",
+				"dweb:/ipfs/QmcmopuEknFdBk2rj7mQDD1zVATLb8Tb7egrHWGVwt64Q5"
 			]
 		}
 	},

@@ -211,7 +211,7 @@
 		"evmVersion": "berlin",
 		"libraries": {},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
@@ -232,10 +232,10 @@
 			]
 		},
 		"contracts/UniswapV2Pair.sol": {
-			"keccak256": "0x9bc876f36f1e018dc9e77f3e31e84f8663e7a8abf762e94750cb4b4061def429",
+			"keccak256": "0x0b9628f7d2613485c00e1fdf03b6f29636f02e0e925a922843e198a2e3547db3",
 			"urls": [
-				"bzz-raw://703d0e33ccaf3ee1174ea6246c4fadcff64426f179d336e03096a20544045fac",
-				"dweb:/ipfs/QmdjL8HDPjUGieGCGhcqrWEWXBenP5yNgwXYQGKXu6d4ko"
+				"bzz-raw://3010730700cdd7717b89784ac4df6fde30814cce3561dcc535ffa3d2ba39aaa7",
+				"dweb:/ipfs/QmPQGyQBbZvXo6bj3BABvQJoagtwDobLxYzwSgsVw7CBqi"
 			]
 		},
 		"contracts/interfaces/IERC20.sol": {
@@ -292,13 +292,6 @@
 			"urls": [
 				"bzz-raw://bc44046abb03e88b586aa00cf8f904ccdeb3795a72046ad62786368640327757",
 				"dweb:/ipfs/QmTGafuipM5eEXdiL5aQKYKWdkpswaVbw5vQMWDzm9sbCm"
-			]
-		},
-		"hardhat/console.sol": {
-			"keccak256": "0x7434453e6d3b7d0e5d0eb7846ffdbc27f0ccf3b163591263739b628074dc103a",
-			"urls": [
-				"bzz-raw://49355f780520494d1d5a0f01858385e51bb5280ce0ecfb960f16995065dca395",
-				"dweb:/ipfs/QmSwJ6C5QLz6xKeQZS8wbwjU1KxRFTYfwbGmtzisd5sRW4"
 			]
 		}
 	},

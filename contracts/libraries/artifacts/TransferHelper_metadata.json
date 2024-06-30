@@ -19,17 +19,24 @@
 		"evmVersion": "berlin",
 		"libraries": {},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
 		"contracts/libraries/TransferHelper.sol": {
-			"keccak256": "0x975b4d7250ad86d7e27d61f2a9f6cdf1babc5bbda3637a87f3ebf6d49ff14e81",
+			"keccak256": "0x19a610d4defe291300cf82cc4bc739ab997a25076c9b105bfc74776c97835aab",
 			"urls": [
-				"bzz-raw://2b3e883138e3445be62c635b2eb59204788332aa0b24478595ccb3a680343af5",
-				"dweb:/ipfs/QmNYTXeTsSEKo1tkmY5pQ4MgdsXuR7wNUCE1h3TdxzXzZe"
+				"bzz-raw://22f93b4cbb5958dec385011343a5b9fb45b1fa4bb20b5fe27a45cebaa2bf37ac",
+				"dweb:/ipfs/QmWVJSaJKqRcELL3ArSZvLHFVPSvwAyMvkvkrTi2FPPFP1"
+			]
+		},
+		"hardhat/console.sol": {
+			"keccak256": "0x7434453e6d3b7d0e5d0eb7846ffdbc27f0ccf3b163591263739b628074dc103a",
+			"urls": [
+				"bzz-raw://49355f780520494d1d5a0f01858385e51bb5280ce0ecfb960f16995065dca395",
+				"dweb:/ipfs/QmSwJ6C5QLz6xKeQZS8wbwjU1KxRFTYfwbGmtzisd5sRW4"
 			]
 		}
 	},

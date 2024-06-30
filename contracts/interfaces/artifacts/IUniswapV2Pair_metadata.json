@@ -722,10 +722,10 @@
 		"compilationTarget": {
 			"contracts/interfaces/IUniswapV2Pair.sol": "IUniswapV2Pair"
 		},
-		"evmVersion": "petersburg",
+		"evmVersion": "berlin",
 		"libraries": {},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []

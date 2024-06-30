@@ -8,7 +8,7 @@ import './libraries/UQ112x112.sol';
 import './interfaces/IERC20.sol';
 import './interfaces/IUniswapV2Factory.sol';
 import './interfaces/IUniswapV2Callee.sol';
-// import "hardhat/console.sol";
+import "hardhat/console.sol";
 
 contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
     using SafeMath  for uint;
@@ -185,6 +185,7 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
         // console.log("fly_amount1Out", amount1Out);
         require(amount0Out > 0 || amount1Out > 0, 'UniswapV2: INSUFFICIENT_OUTPUT_AMOUNT');
         (uint112 _reserve0, uint112 _reserve1,) = getReserves(); // gas savings
+        console.log("fly_swap_reserv20, _reserve1", _reserve0, _reserve1);
         require(amount0Out < _reserve0 && amount1Out < _reserve1, 'UniswapV2: INSUFFICIENT_LIQUIDITY');
 
         uint balance0;

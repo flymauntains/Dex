@@ -175,6 +175,151 @@
 				"type": "function"
 			},
 			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountOut",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reserveIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reserveOut",
+						"type": "uint256"
+					}
+				],
+				"name": "getAmountIn",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reserveIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reserveOut",
+						"type": "uint256"
+					}
+				],
+				"name": "getAmountOut",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountOut",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountOut",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address[]",
+						"name": "path",
+						"type": "address[]"
+					}
+				],
+				"name": "getAmountsIn",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "amounts",
+						"type": "uint256[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address[]",
+						"name": "path",
+						"type": "address[]"
+					}
+				],
+				"name": "getAmountsOut",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "amounts",
+						"type": "uint256[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountA",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reserveA",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "reserveB",
+						"type": "uint256"
+					}
+				],
+				"name": "quote",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountB",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
 				"constant": false,
 				"inputs": [
 					{
@@ -891,31 +1036,17 @@
 		"evmVersion": "berlin",
 		"libraries": {},
 		"optimizer": {
-			"enabled": false,
+			"enabled": true,
 			"runs": 200
 		},
 		"remappings": []
 	},
 	"sources": {
 		"contracts/4_UniswapV2Router02.sol": {
-			"keccak256": "0x1e6cf4037c2f7827613c9793273b6062facd8c22199a83cad49658555491e4ea",
+			"keccak256": "0x2f79ad0b74979f88cd48904e34af484f60ccf394f8a36d393156ee5c7421d8c3",
 			"urls": [
-				"bzz-raw://e6512bb2e0cb1d3c5f7c33640c74d2c63bf4dc3d7e1fec230e33bcda2fa14527",
-				"dweb:/ipfs/QmSRYeFGoaFdGY3r2ac13NxCyJUwHhE6PL4mmhUYsNd2vo"
-			]
-		},
-		"contracts/UniswapV2ERC20.sol": {
-			"keccak256": "0xd1439a1f01e2ca29f7c42650e78fa9ce27ad8eda4bea5f08f043aca176388e33",
-			"urls": [
-				"bzz-raw://c3d43382e98c41e1fc98fadc801d39bc96b0c8a7a4c0eae6e5f0a27804bd3e6c",
-				"dweb:/ipfs/QmRckUNSdY4mwLFzcUGa2hR9a4BiXSzf5wup4VRE68jXKU"
-			]
-		},
-		"contracts/UniswapV2Pair.sol": {
-			"keccak256": "0x9bc876f36f1e018dc9e77f3e31e84f8663e7a8abf762e94750cb4b4061def429",
-			"urls": [
-				"bzz-raw://703d0e33ccaf3ee1174ea6246c4fadcff64426f179d336e03096a20544045fac",
-				"dweb:/ipfs/QmdjL8HDPjUGieGCGhcqrWEWXBenP5yNgwXYQGKXu6d4ko"
+				"bzz-raw://37ea8b34bf05a4b8e4ca7da0342d83aa3fbdc918545f845f431daa76a7f06130",
+				"dweb:/ipfs/QmXLW7FtVDKTpYQSWY63Q2iqahsy8b4acfZwjr4hKiq87a"
 			]
 		},
 		"contracts/interfaces/IERC20.sol": {
@@ -925,34 +1056,6 @@
 				"dweb:/ipfs/QmbKbKtLsPxc5RwSzarP46WkYUyxDFf9wNzRTJBNcoKzx1"
 			]
 		},
-		"contracts/interfaces/IUniswapV2Callee.sol": {
-			"keccak256": "0x5f96538d13bc77507d10c99f407534da9ef3e95e49f128bb20b0c570fb095e00",
-			"urls": [
-				"bzz-raw://07662a51a2a0361eb4805e915cb7c46b7d817879352bb27aabdf83fe248a617e",
-				"dweb:/ipfs/QmUg2ntUNb3pz7vdekc643jcSfpJRz7B4boBrus95Xuttq"
-			]
-		},
-		"contracts/interfaces/IUniswapV2ERC20.sol": {
-			"keccak256": "0x37768b805fc3c87a0b6052f55f5fdcf49317fefaf32900cb1b7b50fa09a2e991",
-			"urls": [
-				"bzz-raw://7e0b9c397f3d35969b428fc69b7fb798da5c16cc1b95d2dbeae60a2fcf5c2585",
-				"dweb:/ipfs/QmWoq5BQETWGnFKTY9Ks6DtoS1U72zbb8Zs4iDeVLAURZT"
-			]
-		},
-		"contracts/interfaces/IUniswapV2Factory.sol": {
-			"keccak256": "0x0f95ba890b61a13cdb260c46c12841d33db99d10f5207a575d24e5a1205c6176",
-			"urls": [
-				"bzz-raw://805a70ebc8f323341a0cf11502af905e947327f354ef2e6db4f0c02db6ca90d1",
-				"dweb:/ipfs/QmNpa8bCYAj1babyW9WVQSZaZCbYpStTY4wJCjtNuznzuF"
-			]
-		},
-		"contracts/interfaces/IUniswapV2Pair.sol": {
-			"keccak256": "0xa627dd772824cdc5a3ccf49c86b5a2448216225d4bc51848fc6f910784e54e72",
-			"urls": [
-				"bzz-raw://8fa9cdf3998a5be2a4502d2dd2b6bd2e59fcb4eeacf71a4ec41dbfe50068818d",
-				"dweb:/ipfs/QmWrpKjNEEKUMkH9XU6H9eMVnGanj19FsbLkTihBy9nyny"
-			]
-		},
 		"contracts/interfaces/IUniswapV2Router02.sol": {
 			"keccak256": "0xaf3c3a6c248eff1c671a4823107915c1dd075e40ad22a40492409a9aa4044f09",
 			"urls": [
@@ -960,11 +1063,11 @@
 				"dweb:/ipfs/Qmc328cwP1QhNfKv1Uv9sTq8yAJGYve371JZxdn4Tw7JhN"
 			]
 		},
-		"contracts/libraries/Math.sol": {
-			"keccak256": "0xa8191f4beef87a7155093ed6635054170493a980e468123bb84fb186bd129f49",
+		"contracts/interfaces/IWETH.sol": {
+			"keccak256": "0x84c9fb939b3e46d22a48c459785f060d03b8a26bbfedc671ab329c744b50607a",
 			"urls": [
-				"bzz-raw://f683bfe5f735bab9b02a6d3d84d0928323b898f5c46f51b47ef342b7bb6cd4fe",
-				"dweb:/ipfs/QmPLfTpM9BJFoVn9MzBHY3d4CL6bkSXdGAsciqHcDCqDTS"
+				"bzz-raw://30447954780f2a8a23dd9e6690761692cb28b0a66aef26c33afaeb2eba60df88",
+				"dweb:/ipfs/QmT9BsNqJvaZYQtpnXSx37kdDfPvcTAoL59o291kqjH358"
 			]
 		},
 		"contracts/libraries/SafeMath.sol": {
@@ -975,24 +1078,10 @@
 			]
 		},
 		"contracts/libraries/TransferHelper.sol": {
-			"keccak256": "0xb7846e7e6314b771b4d326144df024012b6fc8605c81485d75ed4ab01a8f94a9",
+			"keccak256": "0x19a610d4defe291300cf82cc4bc739ab997a25076c9b105bfc74776c97835aab",
 			"urls": [
-				"bzz-raw://87823d1953e29dc79d880f4358f7c634c108e8f526217e69dbca90d5a62d1581",
-				"dweb:/ipfs/QmT6MvkN8aa3HvaFxqVYnJvAbDYWJnJLpHPMxbXzdNFgDP"
-			]
-		},
-		"contracts/libraries/UQ112x112.sol": {
-			"keccak256": "0x7798925ef844a257658bd9e7d25f69d5f36ddbc3dea607c62d2177a48667842d",
-			"urls": [
-				"bzz-raw://bc44046abb03e88b586aa00cf8f904ccdeb3795a72046ad62786368640327757",
-				"dweb:/ipfs/QmTGafuipM5eEXdiL5aQKYKWdkpswaVbw5vQMWDzm9sbCm"
-			]
-		},
-		"contracts/libraries/UniswapV2Library.sol": {
-			"keccak256": "0x1bae352c91fa0c297a92e0da6ce51340a51c07334c8502f9c613211fae6e1c5c",
-			"urls": [
-				"bzz-raw://c68b0e74ac4f99d4454c792a644684396036723e12ce4bfed7735a30d1d91a45",
-				"dweb:/ipfs/QmeG3Q3G5yuUkJr5fZt17gEXYCzTz9q6h2YHPY7fPnUtV6"
+				"bzz-raw://22f93b4cbb5958dec385011343a5b9fb45b1fa4bb20b5fe27a45cebaa2bf37ac",
+				"dweb:/ipfs/QmWVJSaJKqRcELL3ArSZvLHFVPSvwAyMvkvkrTi2FPPFP1"
 			]
 		},
 		"hardhat/console.sol": {
